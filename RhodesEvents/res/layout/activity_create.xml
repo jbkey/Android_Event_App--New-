@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1110"
+    tools:context=".CreateEvent" >
+
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/createtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/title_activity_create_event"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/TimeStart"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/StartT"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/TimeEnd"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/EndT"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/loca" />
+
+    <EditText
+        android:id="@+id/descrip"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="@string/Description"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/Rnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:hint="@string/rnum" />
+
+</FrameLayout>
